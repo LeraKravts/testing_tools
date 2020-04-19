@@ -1,6 +1,6 @@
 issue-01
 вводим в терминал
-python -m doctest -v -o ELLIPSIS trying_dict.py
+python3 -m doctest -v -o ELLIPSIS trying_dict.py
 
 issue-02
 вводим в терминал
