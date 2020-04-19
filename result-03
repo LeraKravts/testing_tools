@@ -1,0 +1,11 @@
+Issue-03
+
+command
+python3 test_fit_transform_issue_3.py
+
+
+
+result:
+Ran 5 tests in 0.004s
+
+OK
