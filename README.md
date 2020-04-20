@@ -4,12 +4,12 @@ issue-01
 
 issue-02
 вводим в терминал
-```pytest morse.py::test_morse_to_english```
+```pytest issues_1_2_morse.py::test_morse_to_english```
 
 issue-03
 вводим в терминал
-```python3 test_fit_transform_issue_3.py```
+```python3 issue_3_test_fit_transform.py```
 
 issue-04
 вводим в терминал
-```pytest one_hot_encode_issue_4.py```
+```issue_4_pytest one_hot_encode.py```
