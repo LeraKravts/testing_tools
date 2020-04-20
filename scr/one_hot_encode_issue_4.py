@@ -1,3 +1,4 @@
+import pytest
 from typing import List, Tuple
 
 
@@ -35,5 +36,6 @@ if __name__ == '__main__':
         ('London', [1, 0, 0]),
     ]
     transformed_cities = fit_transform(cities)
+
     pprint(transformed_cities)
     assert transformed_cities == exp_transformed_cities

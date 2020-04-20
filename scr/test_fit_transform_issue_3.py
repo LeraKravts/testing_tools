@@ -1,11 +1,12 @@
 import unittest
-from one_hot_encode import fit_transform
+
+from scr.one_hot_encode import fit_transform
 
 
 class TestFitTransform(unittest.TestCase):
 
     def test_equal(self):
-        self.assertEqual(fit_transform('Moscow'), [('Moscow', [1])])
+        self.assertEqual(fit_transform(['Moscow']), [('Moscow', [1])])
 
     def test_not_equal(self):
         self.assertNotEqual((fit_transform('Moscow')), (fit_transform('New York')))
@@ -19,6 +20,7 @@ class TestFitTransform(unittest.TestCase):
     def test_raise_type_error(self):
         self.assertRaises(TypeError, fit_transform([2, 3, 4]))
         self.assertRaises(TypeError, fit_transform({'Moscow': 'Russia'}))
+        self.assertRaises(TypeError, fit_transform('Moscow, New York'))
 
 
 if __name__ == '__main__':
