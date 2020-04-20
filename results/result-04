@@ -1,0 +1,16 @@
+Issue 04
+
+command:
+pytest one_hot_encode_issue_4.py
+
+result:
+=============================================================== test session starts ================================================================
+platform darwin -- Python 3.7.4, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
+rootdir: /Users/valeriya/PycharmProjects/learn_testing/scr
+plugins: hypothesis-4.53.1
+collected 5 items
+
+one_hot_encode_issue_4.py .....                                                                                                              [100%]
+
+================================================================ 5 passed in 0.01s =================================================================
+

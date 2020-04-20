@@ -9,3 +9,7 @@ issue-02
 issue-03
 вводим в терминал
 ```python3 test_fit_transform_issue_3.py```
+
+issue-04
+вводим в терминал
+```pytest one_hot_encode_issue_4.py```

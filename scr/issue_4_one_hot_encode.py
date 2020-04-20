@@ -25,10 +25,27 @@ def fit_transform(*args: str) -> List[Tuple[str, List[int]]]:
     return transformed_rows
 
 
+@pytest.mark.parametrize('test_input, expected', [
+    (['Moscow', 'New York'], [('Moscow', [0, 1]), ('New York', [1, 0])]),
+    (['New York', 'London', 'Tokyo'], [('New York', [0, 0, 1]), ('London', [0, 1, 0]), ('Tokyo', [1, 0, 0])]),
+    (['Barcelona'], [('Barcelona', [1])]),
+    (['Moscow', 'Moscow', 'Rome'], [('Moscow', [0, 1]), ('Moscow', [0, 1]), ('Rome', [1, 0])])
+])
+def test_morse_to_english(test_input, expected):
+    assert fit_transform(test_input) == expected
+
+
+def test_exception():
+    if fit_transform(['Moscow', 'New York']) != [('Moscow', [0, 1]), ('New York', [1, 0])]:
+        with pytest.raises(ValueError):
+            fit_transform(['Moscow', 'New York'])
+
+
 if __name__ == '__main__':
     from pprint import pprint
 
     cities = ['Moscow', 'New York', 'Moscow', 'London']
+
     exp_transformed_cities = [
         ('Moscow', [0, 0, 1]),
         ('New York', [0, 1, 0]),
