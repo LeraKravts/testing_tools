@@ -1,6 +1,6 @@
 import unittest
 
-from scr.one_hot_encode import fit_transform
+from scr.issue_4_one_hot_encode import fit_transform
 
 
 class TestFitTransform(unittest.TestCase):
