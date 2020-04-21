@@ -1,7 +1,7 @@
 Issue-01
 
 command:
-python -m doctest -v -o ELLIPSIS trying_dict.py
+python3 -m doctest -v -o ELLIPSIS trying_dict.py
 
 result:
 
