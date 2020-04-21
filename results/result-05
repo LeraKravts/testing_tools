@@ -1,0 +1,6 @@
+Issue-05
+
+commands:
+python3 -m pytest --cov
+
+

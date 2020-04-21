@@ -1,6 +1,5 @@
 import urllib.request
 import json
-from unittest.mock import MagicMock, patch
 
 
 API_URL = 'http://worldclockapi.com/api/json/utc/now'

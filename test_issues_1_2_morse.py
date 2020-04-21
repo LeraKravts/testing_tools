@@ -58,7 +58,7 @@ def decode(morse_message: str) -> str:
 @pytest.mark.parametrize('test_input, expected', [
     ('--', 'M'),
     ('.-', 'A'),
-    ('__', 'A'),
+    ('--.', 'G'),
 ])
 def test_morse_to_english(test_input, expected):
     assert decode(test_input) == expected

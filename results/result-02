@@ -1,7 +1,7 @@
 Issue-02
 
 command:
-pytest morse.py::test_morse_to_english
+pytest test_issues_1_2_morse.py::test_morse_to_english
 
 result:
 

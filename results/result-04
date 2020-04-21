@@ -1,7 +1,7 @@
 Issue 04
 
 command:
-pytest one_hot_encode_issue_4.py
+pytest test_issue_4_one_hot_encode.py
 
 result:
 =============================================================== test session starts ================================================================
